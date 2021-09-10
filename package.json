@@ -1,0 +1,23 @@
+{
+  "name": "prototypenode",
+  "version": "1.0.0",
+  "description": "Prototipo con Node JS",
+  "main": "index.js",
+  "scripts": {
+    "dev":"nodemon server ",
+    "start": "node server"
+  },
+  "author": "Marcela y Lorena",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.3.0",
+    "nodemon": "^2.0.12",
+    "pug": "^3.0.2",
+    "sequelize": "^6.6.5"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0"
+  }
+}

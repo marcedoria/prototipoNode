@@ -1,0 +1,33 @@
+extends ../layout/index
+block contenido
+ section(id="global")
+        header
+          #logo
+            h1 #{pagina}
+          .clearfix
+           navbar
+             ul(id="menu")
+                li
+                  a(href='/') INICIO
+                li
+                  a(href='/menu') Menu
+        #slaider
+        form(action="/domicilio" method="POST")
+            
+              input(type='text' name='idL' placeholder='id local') 
+              br
+              hr
+              input(type='text' name='nombreC' placeholder='Nombre' )
+              br
+              hr
+              input(type='text' name='descripcion' placeholder='Descripcion' )
+              br
+              hr
+              input(type='text' name='Precio'  placeholder='Precio' )
+              br
+              hr
+              input(type='text' name='Imagen'  placeholder='Imagen')
+              br
+              hr
+              input(type='button' name='cancelar' value='Cancelar' class="btn btn-danger" onclick=" window.location = './'")
+              input#guardar(type='submit' name='guardar'  class="btn btn-primary ms-3" value="Guardar")

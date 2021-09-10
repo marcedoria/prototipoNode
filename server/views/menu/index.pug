@@ -1,0 +1,32 @@
+extends ../layout/index
+block contenido
+  section(id="global")
+    header
+      #logo
+        h1 #{pagina}
+      .clearfix
+      navbar
+        ul#menu
+          li
+            a(href='/') IR A INICIO
+          li
+            a(href='/domicilio') REGISTRARSE
+          
+          
+    .row
+       each me in menu
+        .comida
+         center
+          div
+            img(src=`/img/${me.imagen}`)
+         center
+          span= me.nombreC
+          br
+          span= me.descripcion
+          br
+          span= me.precio 
+          
+
+         
+          
+                       

@@ -1,0 +1,26 @@
+extends ../layout/index
+block contenido
+  section(id="global")
+    header
+      #logo
+         h1 #{pagina}
+      .clearfix
+       navbar
+         ul(id="menu")
+            li
+               a(href='/domicilio') REGISTRARSE
+            li
+              a(href='/menu') Menu
+            
+    .row
+       each lo in local 
+         .locales 
+        
+           span=lo.nombreL
+            center
+              #img
+              
+                 img(src=`img/${lo.imagen}` class="img")
+              
+
+      
